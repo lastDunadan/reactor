@@ -1,0 +1,62 @@
+.splasScreen {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 1920px;
+  height: 100vh;
+  padding: 2%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../../../public/img/tonton-revlover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-height: 700px) {
+    background-position: -450px bottom;
+  }
+
+  @media (min-width: 992px) {
+    background-position: center;
+  }
+
+  .infoBox {
+    position: absolute;
+    top: unset;
+    right: unset;
+    width: 90%;
+    bottom: 5%;
+    padding: 1% 2%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid black;
+    font-size: 13px;
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+      top: 10%;
+      right: 7%;
+      bottom: unset;
+      width: fit-content;
+    }
+
+    h2, p, ul, a {
+      margin: 5px;
+      list-style: none;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    &__name {
+      font-size: 9px;
+    }
+
+    &__artist {
+      font-size: 9px;
+      text-align: center;
+      margin: 20px auto 10px !important;
+      display: block;
+      color: #808080;
+    }
+  }
+}
