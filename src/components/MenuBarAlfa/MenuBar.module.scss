@@ -1,0 +1,42 @@
+.menuBarAlfa {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 98vw;
+  background-color: black;
+  z-index: 9;
+  padding: 0.25vw 1vw;
+
+  img {
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      padding: 2px 10px;
+
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:hover a {
+        color: black;
+      }
+    }
+  }
+}
